@@ -1,0 +1,31 @@
+body {
+	display: grid;
+	grid-template-columns: 20vw 80vw;
+	grid-template-areas:
+		"sidebar header"
+		"sidebar form"
+		"sidebar footer";
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+}
+
+.sidebar {
+	grid-area: sidebar;
+	background-image: url(/src/img/icecream.jpg);
+	background-size: cover;
+}
+
+.header {
+	grid-area: header;
+}
+
+.footer {
+	grid-area: footer;
+}
+
+label,
+input {
+	display: flex;
+	flex-direction: column;
+}
